@@ -5,21 +5,20 @@ export const index = async () => {
         const res = await fetch(BASE_URL, {
             headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
-        console.log(res.json());
-        return res.json();
+        return await res.json();
     } catch (error) {
         console.error(error);
     }
 }
 
-export const show = async (id) => {
+export const show = async (productId) => {
     try {
-        const res = await fetch(`${BASE_URL}/${id}`, {
+        const res = await fetch(`${BASE_URL}/${productId}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }
         });
-        return res.json();
+        return await res.json();
     } catch (error) {
         console.error(error);
     }

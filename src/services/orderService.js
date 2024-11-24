@@ -14,14 +14,14 @@ export const index = async () => {
     }
 }
 
-export const show = async (id) => {
+export const show = async (orderId) => {
     try {
-        const res = await fetch(`${BASE_URL}/${id}`, {
+        const res = await fetch(`${BASE_URL}/${orderId}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }
         });
-        return res.json();
+        return await res.json();
     } catch (error) {
         console.error(error);
     }
