@@ -1,49 +1,60 @@
 main {
     padding: 20px;
     font-family: Arial, sans-serif;
-}
-
-.productsList {
+    background-color: #e8f5e9; /* Soft green background */
+  }
+  
+  .productsList {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: -10px; /* Adjust margin to handle spacing between items */
-}
-
-.productsList li {
-    border: 1px solid #ddd;
+  }
+  
+  .productsList li {
+    border: 1px solid #c8e6c9; /* Subtle green border */
     margin: 10px; /* Adjust margin to handle spacing between items */
     padding: 10px;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease;
+    border-radius: 8px; /* Softer rounded corners */
+    transition: box-shadow 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
     flex: 1 1 calc(25% - 20px); /* 25% width minus the margin */
     box-sizing: border-box;
-}
-
-.productsList li:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.productsList h2 {
+    background-color: #ffffff; /* Clean white background for contrast */
+  }
+  
+  .productsList li:hover {
+    box-shadow: 0 4px 8px rgba(46, 74, 60, 0.2); /* Subtle green shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .productsList h2 {
     margin: 0;
     font-size: 1.5em;
-}
-
-.productsList p {
+    color: #388e3c; /* Vibrant green for headings */
+  }
+  
+  .productsList p {
     margin: 5px 0;
-}
-
-.productsList button {
-    background-color: #007bff;
+    color: #4caf50; /* Softer green for descriptions */
+  }
+  
+  .productsList button {
+    background-color: #4caf50; /* Vibrant green button */
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+  }
+  
+  .productsList button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
 
-.productsList button:hover {
-    background-color: #0056b3;
-}
+  .productsList a {
+    text-decoration: none;
+    color: #4caf50; /* Softer green for links */
+  }
+  
