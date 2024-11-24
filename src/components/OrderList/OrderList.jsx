@@ -1,10 +1,11 @@
+import './OrderList.css';
 import { Link } from 'react-router-dom';
 
 const OrderList = ({ orders }) => {
     return (
         <div>
         <h1>Orders</h1>
-        <ul>
+        <ul className='orderList'>
             {orders.map(order => (
             <li key={order._id}>
                 <Link to={`/orders/${order._id}`}>

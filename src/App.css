@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+main {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}

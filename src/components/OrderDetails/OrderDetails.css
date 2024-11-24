@@ -1,0 +1,46 @@
+        .order-details {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .order-details h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .order-info, .order-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .order-info h2, .order-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .order-info p, .order-item p {
+            margin: 5px 0;
+        }
+
+        .order-item {
+            border-left: 5px solid #007bff;
+        }
+
+        .product-info, .region-info {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+        }
+
+        .product-info h3, .region-info h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-info p, .region-info p {
+            margin: 3px 0;
+        }

@@ -1,3 +1,4 @@
+import './ProductList.css';
 import { Link } from 'react-router-dom';
 
 const ProductList = ({ products }) => {
@@ -5,7 +6,7 @@ const ProductList = ({ products }) => {
     return (
         <main>
             <h1>Products</h1>
-            <ul>
+            <ul className='productsList'>
                 {products.map(product => (
                     <li key={product._id}>
                         <Link to={`/products/${product._id}`}>

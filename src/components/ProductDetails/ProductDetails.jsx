@@ -1,3 +1,4 @@
+import './ProductDetails.css';
 import {useParams} from 'react-router-dom';
 
 import { useState, useEffect } from 'react';
@@ -19,7 +20,7 @@ const ProductDetails = () => {
 
     if (!product) return <h1>Loading...</h1>
     return (
-        <main>
+        <main className='product'>
             <h1>{product.product_name}</h1>
             <p>{product.category}</p>
             <p>{product.sub_category}</p>

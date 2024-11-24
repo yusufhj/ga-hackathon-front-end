@@ -1,0 +1,49 @@
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.orderList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: -10px; /* Adjust margin to handle spacing between items */
+}
+
+.orderList li {
+    border: 1px solid #ddd;
+    margin: 10px; /* Adjust margin to handle spacing between items */
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+    flex: 1 1 calc(25% - 20px); /* 25% width minus the margin */
+    box-sizing: border-box;
+}
+
+.orderList li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orderList h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.orderList p {
+    margin: 5px 0;
+}
+
+.orderList button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.orderList button:hover {
+    background-color: #0056b3;
+}
