@@ -5,7 +5,7 @@ const Dashboard = () => {
       <main className="dashboard">
       <header className="hero">
         <div className="hero-content">
-          <h1>True Eco</h1>
+          <h1>Tru Eco</h1>
           <p>Discover sustainable products that care for the planet.</p>
           <button className="shop-now-btn">Explore Now</button>
         </div>
